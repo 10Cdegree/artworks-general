@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@200;300&family=Sorts+Mill+Goudy:ital@0;1&display=swap");
+
+.App {
+  text-align: center;
+}
+
+* {
+  transition-duration: 0.5s;
+}
+
+#title {
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 100px;
+}
+
+.gallery-view {
+  width: 70vw;
+  margin: auto;
+}
+
+.gallery-element {
+  margin: 10px;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  border: 1px dotted gray;
+}
+
+.gallery-element button {
+  outline: none;
+  background: none;
+  border: 1px dotted black;
+  font-family: "Cinzel";
+  text-transform: lowercase;
+  padding: 5px;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.gallery-element button:hover {
+  background: black;
+  color: white;
+  box-shadow: 0px 0px 25px 2px #000000;
+}
+
+.gallery-element:hover {
+  border: 1px solid black;
+  box-shadow: 0px 0px 25px 5px #000000;
+}
+
+.gallery-element img {
+  width: auto;
+  max-height: 45vh;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 450px;
+  height: 450px;
+  object-position: right top;
+}
+
+.gallery-title {
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.gallery-artist {
+  font-family: "Sorts Mill Gouds";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.art-viewer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-viewer-image {
+  max-height: 80vh;
+  max-width: 50vw;
+}
+
+.art-viewer-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.art-viewer-info-text p {
+  font-family: "Sorts Mill Goudy";
+  font-style: italic;
+}
+
+.art-viewer-info-text h2 {
+  font-family: "Cinzel", serif;
+  font-weight: normal;
+}
+
+.search-results-container {
+  width: 50%;
+  margin: auto;
+}
+
+.searchresult {
+  font-family: "Sorts Mill Goudy";
+  margin: 5px;
+  font-size: 1.25rem;
+  font-style: italic;
+  text-align: left;
+}
+
+.MuiPagination-ul {
+  justify-content: center;
+}
+
+#header {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header a {
+  color: white;
+  font-family: "Cinzel", serif;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#header a:hover {
+  background: white;
+  color: black;
+}
+
+.user-form {
+  width: 250px;
+  margin: auto;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-form h1 {
+  font-family: "Cinzel", serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.user-form input {
+  width: 200px;
+  font-family: "Sorts Mill Goudy";
+  padding: 5px;
+}
+
+.user-form input:focus {
+  outline: 1px solid black;
+}
+
+.user-form button {
+  outline: none;
+  margin-top: 10px;
+  width: 215px;
+  background: black;
+  color: white;
+  font-family: "Sorts Mill Goudy";
+  font-style: italic;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
